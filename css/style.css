@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #a67B5B; /* coffee background */
+  color: #000000;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: #5a3600; /* dark coffee */
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #fffaf0; /* Off-white text */
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fffaf0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+ 
+}
+
+.intro-wrapper {
+  width: 100%;
+  background-color: #8B5E3C; /* Same as intro background */
+}
+
+.intro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro div {
+  max-width: 600px;
+  margin: 20px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #fff1dd;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #000000
+}
+
+/* Generic Section Styles */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff1dd;
+  margin-bottom: 30px;
+}
+
+section p {
+  text-align: center;
+  color: #000000;
+  font-size: 1rem;
+}
+
+/* About Me Section */
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#about ul li {
+  background-color: #ffe2bf;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #5a3600;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project {
+  background-color: #8B5E3C;
+  border-radius: 10px;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.project h3 {
+  color: #000000;
+  margin-top: 10px;
+}
+
+.project p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color:black;
+  text-decoration: underline;
+}
+
+
+.project-card a {
+  display: block;
+  text-align: center;
+  margin: 0 15px 15px;
+  color: #fff1dd;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+#contact p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #fff1dd;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fffdf6;
+}
+
+form button {
+  padding: 10px;
+  background-color: #fff1dd;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color:#fff1dd;
+}
+
+/* Footer */
+footer {
+  background-color: #5a3600;
+  color: #fff0e0;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
