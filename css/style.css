@@ -223,6 +223,7 @@ section p {
 
 .social_media a {
   color: #fff1dd;
+  margin-left: 8px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
