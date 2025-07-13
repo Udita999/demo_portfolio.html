@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color:#000000;
 }
 
 /* Intro Section */
@@ -218,18 +218,27 @@ section p {
 }
 
 .social_media{
+  text-align: center;
   font-size: 1.1rem;
+  color: #fff1dd;
 }
 
 .social_media a {
+  display: inline-flex;
+  align-items: center;
   color: #fff1dd;
-  margin-left: 8px;
+  margin: 0 8px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .social_media a:hover {
   color: #ffe2bf;
+}
+
+.social_media a img {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 form {
